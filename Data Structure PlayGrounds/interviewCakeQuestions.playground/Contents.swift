@@ -35,3 +35,33 @@ func findBestSale(array : [Int]) -> Int {
 
 findBestSale(stockPricesYesterday)
 
+func findBetterWaySale(arrayOfPrices : [Int]) -> Int {
+    
+    // declare a maximum profit to initialize
+    var maxProfit = 0
+    // set minimum price to be the first item in the array
+    var minimumPrice = arrayOfPrices[0]
+    
+    //loop through the prices array
+    for currentPrice in arrayOfPrices {
+        
+        // check to see if the current position in the array is the lowest price compared to the previous minimum price..if so, update minimum price
+        minimumPrice = min(minimumPrice, currentPrice)
+        
+        // compute the profit from the current price and the minimum price
+        let potentialProfit = currentPrice - minimumPrice
+        
+        //find max profit
+        maxProfit = max(maxProfit, potentialProfit)
+        
+    }
+    
+    
+    
+    return maxProfit
+    
+}
+
+findBetterWaySale(stockPricesYesterday)
+
+
