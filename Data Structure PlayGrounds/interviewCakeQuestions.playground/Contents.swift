@@ -36,9 +36,11 @@ func findBestSale(array : [Int]) -> Int {
 findBestSale(stockPricesYesterday)
 
 func findBetterWaySale(arrayOfPrices : [Int]) -> Int {
-    
+    if stockPricesYesterday.count < 2 {
+        print("You must have at least two prices to compute profit")
+    }
     // declare a maximum profit to initialize
-    var maxProfit = 0
+    var maxProfit = stockPricesYesterday[1] - stockPricesYesterday[0]
     // set minimum price to be the first item in the array
     var minimumPrice = arrayOfPrices[0]
     
