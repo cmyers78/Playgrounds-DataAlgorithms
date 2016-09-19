@@ -19,8 +19,8 @@ func findBestSale(array : [Int]) -> Int {
             let laterTime = max(item, insideItem)
             
             // find earlier and later prices
-            let earlierPrice = stockPricesYesterday[earlierTime]
-            let laterPrice = stockPricesYesterday[laterTime]
+            let earlierPrice = array[earlierTime]
+            let laterPrice = array[laterTime]
             
             // calculate the potential profit
             let potentialProfit = laterPrice - earlierPrice

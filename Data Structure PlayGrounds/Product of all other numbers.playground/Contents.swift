@@ -30,4 +30,17 @@ for outerIndex in testArray {
 print(newArray)
 // output should read: [84, 12, 28, 21]
 
-84 * 12
+func getProductsOfIntsExceptIndex(array : [Int]) {
+    var productsOfAllIntsExceptAtIndex = [Int(array.count)]
+    
+    var productThusFar = 1
+    var counter = 0
+    while counter < array.count {
+        productsOfAllIntsExceptAtIndex[counter] = productThusFar
+        productThusFar = productThusFar * array[counter]
+        counter = counter + 1
+    }
+}
+
+
+
