@@ -12,22 +12,44 @@ import UIKit
 
 let testArray = [1, 7, 3, 4]
 
-var newArray = [Int]()
 
-for outerIndex in testArray {
-    //print(outerIndex)
-    var product = 1
+func loopArray(array : [Int]) -> [Int] {
+    var newArray = [Int]()
     
-    for innerIndex in testArray {
-        if innerIndex != outerIndex {
-            product = product * innerIndex
-
-            
+    for outerIndex in testArray {
+        //print(outerIndex)
+        var product = 1
+        
+        for innerIndex in testArray {
+            if innerIndex != outerIndex {
+                product = product * innerIndex
+                
+                
+            }
         }
+        newArray.append(product)
     }
-    newArray.append(product)
+    return newArray
 }
-print(newArray)
+
+loopArray(testArray)
+
+//var newArray = [Int]()
+//
+//for outerIndex in testArray {
+//    //print(outerIndex)
+//    var product = 1
+//    
+//    for innerIndex in testArray {
+//        if innerIndex != outerIndex {
+//            product = product * innerIndex
+//
+//            
+//        }
+//    }
+//    newArray.append(product)
+//}
+//print(newArray)
 // output should read: [84, 12, 28, 21]
 
 func getProductsOfIntsExceptIndex(array : [Int]) {
