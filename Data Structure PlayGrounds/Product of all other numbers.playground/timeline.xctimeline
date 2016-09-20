@@ -28,8 +28,13 @@
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=824&amp;EndingColumnNumber=19&amp;EndingLineNumber=49&amp;StartingColumnNumber=5&amp;StartingLineNumber=48&amp;Timestamp=496007178.025785"
+         documentLocation = "#CharacterRangeLen=0&amp;CharacterRangeLoc=815&amp;EndingColumnNumber=19&amp;EndingLineNumber=35&amp;StartingColumnNumber=5&amp;StartingLineNumber=35&amp;Timestamp=496007459.045752"
          selectedRepresentationIndex = "1"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=14&amp;CharacterRangeLoc=1100&amp;EndingColumnNumber=65&amp;EndingLineNumber=44&amp;StartingColumnNumber=51&amp;StartingLineNumber=44&amp;Timestamp=496028989.275204"
+         selectedRepresentationIndex = "2"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
    </TimelineItems>
