@@ -35,3 +35,30 @@ myStark.push(stringToPush: "Rob")
 myStark.pop()
 myStark.pop()
 print(myStark.stackArray)
+
+
+let numbersList : Array<Int> = [1, 2, 4, 3, 9, 5, 6, 10, 7, 8]
+
+let sorted = numbersList.sorted()
+
+// Linear Time Notation - as n grows, so does the amount of time it takes to run the algorithm
+func linearSearch(key : Int) {
+    // check all possible values to see if key exists in the array
+    for number in sorted {
+        if number == key {
+            print("value at \(key) found at position \(number)")
+            // break stops the search when the if conditional is true
+            break
+        } else {
+            print("value at \(key) not found")
+            
+        }
+    }
+}
+
+linearSearch(key: 8)
+linearSearch(key: 4)
+linearSearch(key: 11)
+linearSearch(key: 1)
+
+
