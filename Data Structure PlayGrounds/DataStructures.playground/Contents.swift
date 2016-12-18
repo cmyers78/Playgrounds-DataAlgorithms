@@ -190,5 +190,39 @@ func linearSearch2(forElement key: Int, inArray arr : [Int]) -> Bool {
 linearSearch2(forElement: 5, inArray: array)
 linearSearch2(forElement: 1, inArray: array)
 
+let test = "c"
+print(test.utf8)
+print(test.utf16)
+
+// Find max value in an array
 
 
+
+func maxValue() {
+    
+    let array = [0, 1, 5, 7, 9, 12, 18, 2, 5, 33, 88, 0, 44]
+    
+    var maxValue = array[0]
+    
+    print(array.count)
+    
+    
+    for index in 0..<(array.count) {
+        if array[index] > maxValue {
+            maxValue = array[index]
+            print("New max value is: \(maxValue)")
+        }
+    }
+    
+//    for (index, _) in array.enumerated() {
+//            if array[index] > maxValue {
+//                maxValue = array[index]
+//                print("New max value is: \(maxValue)")
+//            }
+//        
+//    }
+    
+    
+}
+
+maxValue()
