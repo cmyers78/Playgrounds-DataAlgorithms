@@ -178,13 +178,10 @@ func linearSearch2(forElement key: Int, inArray arr : [Int]) -> Bool {
     //check all possible values
     for number in arr {
         if number == key {
-        
             return true
         }
     }
-    
     return false
-
 }
 
 linearSearch2(forElement: 5, inArray: array)
@@ -196,18 +193,14 @@ print(test.utf16)
 
 // Find max value in an array
 
+let myArray = [0, 1, 5, 7, 9, 12, 18, 2, 5, 33, 88, 0, 44]
 
+func maxValue(numbersArray array : [Int]) -> Int {
 
-func maxValue() {
-    
-    let array = [0, 1, 5, 7, 9, 12, 18, 2, 5, 33, 88, 0, 44]
-    
     var maxValue = array[0]
-    
     print(array.count)
     
-    
-    for index in 0..<(array.count) {
+    for index in 0..<array.count {
         if array[index] > maxValue {
             maxValue = array[index]
             print("New max value is: \(maxValue)")
@@ -222,7 +215,18 @@ func maxValue() {
 //        
 //    }
     
-    
+    return maxValue
 }
 
-maxValue()
+maxValue(numbersArray: myArray)
+
+func averageValue() {
+    // average = sum of the array / # of values in array
+    // Step 1: determine the length of the array
+    // Step 2: determine the sum of the values in the array
+    // Step 3: determine the average based on two previous calculations
+}
+
+// Insertion sort
+
+
