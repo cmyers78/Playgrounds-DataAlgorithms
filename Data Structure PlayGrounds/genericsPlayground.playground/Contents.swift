@@ -28,3 +28,14 @@ let greeting = newModify(input: "Hello", byApplying: {input in input + ", World!
 print(greeting)
 let greet = newModify(input: "Yo", byApplying: {(input : String) -> String in return input + " Adrian"})
 print(greet)
+
+// Transforming Arrays
+
+func transform<T, U>(input: [T], byApplying f: (T) -> U) -> [U] {
+    var transformedArray = [U]()
+    for element in input {
+        transformedArray.append(f(element))
+    }
+    return transformedArray
+}
+

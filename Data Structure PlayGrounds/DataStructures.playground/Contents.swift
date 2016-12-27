@@ -220,13 +220,31 @@ func maxValue(numbersArray array : [Int]) -> Int {
 
 maxValue(numbersArray: myArray)
 
-func averageValue() {
+func averageValue(arrayToAnalyze array : [Int]) -> Int {
     // average = sum of the array / # of values in array
-    // Step 1: determine the length of the array
-    // Step 2: determine the sum of the values in the array
-    // Step 3: determine the average based on two previous calculations
+    
+    // Determine how many values exist in the array
+    let lengthArray = array.count
+    
+    // Create an Integer to hold the sum of the values
+    var sumArray = 0
+    
+    // Loop through the array and take each successive value and add it to the sumArray
+    for currentValue in array{
+        sumArray = sumArray + currentValue
+    }
+    // Calculate the average
+    return sumArray / lengthArray
+    
 }
 
+224 / 13
+
+averageValue(arrayToAnalyze: myArray)
+
+
 // Insertion sort
+
+
 
 
