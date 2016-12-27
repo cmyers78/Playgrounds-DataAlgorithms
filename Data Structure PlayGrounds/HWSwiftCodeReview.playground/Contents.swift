@@ -250,7 +250,7 @@ for album in allAlbums {
 
 for album in allAlbums {
     let studioAlbum = album as? StudioAlbum
-    print(studioAlbum?.name)
+    print(studioAlbum?.name ?? "Yo, this item is nil")
 }
 
 for album in allAlbums {
@@ -264,5 +264,44 @@ for album in allAlbums {
 }
 
 // Closures
+
+let vw = UIView()
+
+// animation function with closure at the end
+UIView.animate(withDuration: 0.5, animations: { vw.alpha = 0})
+
+// Same as above, but removed the reference to the last parameter name.  Works the same.  CALLED A TRAILING CLOSURE
+UIView.animate(withDuration: 0.5) { vw.alpha = 0 }
+
+
+
+// Hacking with Swift Challenge # 1 - FizzBuzz
+
+func fizzbuzz(with num : Int) -> String {
+    if num % 3 == 0 && num % 5 == 0 {
+        return("FizzBuzz")
+    }
+    else if num % 3 == 0 {
+        return("Fizz")
+    }
+    
+    else if num % 5 == 0 {
+        return("Buzz")
+    }
+    else {
+        return ("\(num)")
+    }
+}
+
+fizzbuzz(with: 3)
+fizzbuzz(with: 5)
+fizzbuzz(with: 15)
+fizzbuzz(with: 16)
+fizzbuzz(with: 30)
+fizzbuzz(with: 9)
+fizzbuzz(with: 10)
+fizzbuzz(with: 100)
+fizzbuzz(with: 101)
+
 
 
